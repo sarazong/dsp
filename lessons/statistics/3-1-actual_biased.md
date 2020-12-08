@@ -29,5 +29,4 @@ thinkplot.PrePlot(2)
 thinkplot.Pmfs([numkids_pmf, biased_numkids_pmf])
 thinkplot.Show(xlabel = "number of kids", ylabel = "PMF", legend = True)
 ```
-
-thinkplot.Show(xlabel = "number of kids", ylabel = "PMF", legend = True)
+![](https://github.com/sarazong/dsp/blob/master/lessons/statistics/Ch3_Ex1.png)
