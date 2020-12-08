@@ -30,3 +30,5 @@ thinkplot.Pmfs([numkids_pmf, biased_numkids_pmf])
 thinkplot.Show(xlabel = "number of kids", ylabel = "PMF", legend = True)
 ```
 ![](https://github.com/sarazong/dsp/blob/master/lessons/statistics/Ch3_Ex1.png)
+
+The mean of the **actual** distribution is **1.024**, and the mean of the **biased** distribution **2.404**.
