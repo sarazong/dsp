@@ -29,4 +29,4 @@ thinkplot.PrePlot(2)
 thinkplot.Pmfs([numkids_pmf, biased_numkids_pmf])
 thinkplot.Show(xlabel = "number of kids", ylabel = "PMF", legend = True)
 ```
-![graph for ch3_ex1](Desktop/Metis/pre_camp/Ch3_Ex1.png)
+
