@@ -22,4 +22,4 @@ totalwgt_cd = cohen_d(firsts.totalwgt_lb, others.totalwgt_lb)
 print("Cohen's d for birth weight is {0:.3f}".format(totalwgt_cd))
 ```
 **Cohen's d for birth weight is -0.089**. It indicates that on average, the birth weight tends to be lower for the first child comparing to the other child(ren). 
-**Cohen's d for pregnancy length is **0.029**. The first child seems to have longer pregancy length comparing to the other child(ren). 
+**Cohen's d for pregnancy length is 0.029**. The first child seems to have longer pregancy length comparing to the other child(ren). 
