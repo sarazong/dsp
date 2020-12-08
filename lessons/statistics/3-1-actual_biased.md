@@ -6,3 +6,27 @@ Use the NSFG respondent variable NUMKDHH to construct the actual distribution fo
 Now compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.
 
 Plot the actual and biased distributions, and compute their means. As a starting place, you can use chap03ex.ipynb.
+
+```python
+def BiasPmf(pmf, label):
+    new_pmf = pmf.Copy(label=label)
+
+    for x, p in pmf.Items():
+        new_pmf.Mult(x, x)
+        
+    new_pmf.Normalize()
+    return new_pmf
+    
+df_ch3 = nsfg.ReadFemResp()
+
+numkids_pmf = thinkstats2.Pmf(df_ch3.numkdhh, label = "actual")
+print("mean of the actual distribution {0:0.3f}".format(numkids_pmf.Mean()))
+
+biased_numkids_pmf = BiasPmf(numkids_pmf, label = "observed_kids")
+print("mean of the biased distribution {0:0.3f}".format(biased_numkids_pmf.Mean()))
+
+thinkplot.PrePlot(2)
+thinkplot.Pmfs([numkids_pmf, biased_numkids_pmf])
+thinkplot.Show(xlabel = "number of kids", ylabel = "PMF", legend = True)
+```
+![graph for ch3_ex1](Desktop/Metis/pre_camp/Ch3_Ex1.png)
