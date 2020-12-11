@@ -26,12 +26,14 @@ Spearman_cor = SpearmanCorr(dfsub_ch7.totalwgt_lb, dfsub_ch7.agepreg)
 print("Spearman's correlation between newborn's weight and mother's age is {0:0.3f}".format(Spearman_cor))
 ```
 Scatter plot of birth weight vs. mother's age:
+
 ![](Ch7_Ex1_graph1.png)
 
 Percentiles of birth weight vs. mother's age:
+
 ![](Ch7_Ex1_graph2.png)
 
 Pearson's correlation between birth weight and mother's age is 0.069.
 Spearman's correlation between birth weight and mother's age is 0.095.
 
-From the percentiles of birth weight vs. mother's age plot, there seems to be a positive correlation between the two variable when the mother's age is between 15 to 35 years old. However when we consider the full range of mother's age, the correlation is not linear. Both Pearson's and Spearman's correlations are <0.1, indicating the relationship is weak.  
+From the percentiles of birth weight vs. mother's age plot, there seems to be a positive correlation between the two variables when the mother's age is between 15 to 35 years old. However when we consider the full range of mother's age, the correlation is not linear. Both Pearson's and Spearman's correlations are <0.1, indicating the relationship between the two variables is weak.  
