@@ -21,5 +21,5 @@ print("Cohen's d for pregnancy length is {0:.3f}".format(prglngth_cd))
 totalwgt_cd = cohen_d(firsts.totalwgt_lb, others.totalwgt_lb)
 print("Cohen's d for birth weight is {0:.3f}".format(totalwgt_cd))
 ```
-**Cohen's d for birth weight is -0.089.**
-**Cohen's d for pregnancy length is 0.029.**
+**Cohen's d for birth weight is -0.089**, indicating that the weight for the first babies seems to be lighter than the others.
+**Cohen's d for pregnancy length is 0.029**, indicating that the pregnancy length for the first babies seems to be longer than the others.
