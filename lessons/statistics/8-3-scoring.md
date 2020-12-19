@@ -57,6 +57,10 @@ for lam in range(2, 11, 1):
     print("Standard Error for lambda equals to {} is {:0.4F}".format(lam, stderr))
 ```
 
+Sampling distribution of the estimates and 90% confidence interval:
+
+![](Ch8_Ex3.png)
+
 The mean error for the estimates is 0.0147 and it converges to 0 as the number of estimates increases, indicating the estimator is unbiased. 
 The standard error for the estimates is 1.4180 with lambda equals to 2. It increases as the value of lambda increases. 
 * Standard Error for lambda equals to 3 is 1.7519
