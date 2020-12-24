@@ -8,3 +8,26 @@ Write a class named DiffMeansResample that inherits from DiffMeansPermute and ov
 
 Use this model to test the differences in pregnancy length and birth weight. How much does the model affect the results?
 
+```python
+import first
+import hypothesis
+import numpy as np
+
+class DiffMeansResample(hypothesis.DiffMeansPermute):
+    def RunModel(self):
+        group1 = np.random.choice(self.pool, self.n, replace = True)
+        group2 = np.random.choice(self.pool, self.m, replace = True)
+        data = group1, group2
+        return data
+        
+live, firsts, others = first.MakeFrames()
+prglngths = firsts.prglngth.values, others.prglngth.values
+ht_prglngths = DiffMeansResample(prglngths)
+pval_prglngths = ht_prglngths.PValue()
+pval_prglngths
+
+birthwgts = firsts.totalwgt_lb.values, others.totalwgt_lb.values
+ht_birthwgts = DiffMeansResample(birthwgts)
+pval_birthwgts = ht_birthwgts.PValue()
+pval_birthwgts
+```
