@@ -31,3 +31,5 @@ ht_birthwgts = DiffMeansResample(birthwgts)
 pval_birthwgts = ht_birthwgts.PValue()
 pval_birthwgts
 ```
+
+Using resampling method, the p-value for the difference in mean pregnancy length is 0.171, and the p-value for the difference in mean birth weight is 0. They match the p-values obtained by permutation closely.
