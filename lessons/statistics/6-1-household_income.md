@@ -53,4 +53,4 @@ The **Pearson's skewness** of the sample is 0.736.
 
 The **fraction of households reporting a taxable income below mean** is 0.66.
 
-The median would not be affected by the assumed upper bound. However, skewness, Pearson's skewness, and mean would be affected. A upper bound of 100 millions instead of 1 million would increase the mean dramatically, and extend the distribution to the right. 
+The median would not be affected by the assumed upper bound since the ranking of the data doesn't change. However, skewness, Pearson's skewness, and mean would be affected. A upper bound of 100 millions instead of 1 million would increase the mean dramatically, and extend the right tail of the distribution. 
